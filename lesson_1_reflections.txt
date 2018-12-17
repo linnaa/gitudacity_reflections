@@ -1,0 +1,49 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	It decreased the amount of text i needed to check manually.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It can help you trace your own way of thinking while making a programm.
+    It can save your time for dealing with your own mistakes as you can revert
+    to the previous version of the file pretty fast.
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manual saving will always reflect the changes that are logical to you
+    although you need to keep in mind you have to commit. Whereas Google docs
+    saves copies automatically which does not always makes sence to you.
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    It dependes on the purpose they were made for. Git is made for programmers
+    and in many cases they work with multiple files which are highly interconnected.
+    Google docs just doesn't need that.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Go to the repository catalogue, than enter git log command in git bash prompt
+    lline that will show all the commits. To quit the git log mode enter q
+    (stands for quit). Than use git diff + two commits' id to see the
+    differenses between two commits.
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	It's good to know you can always get back to the previous edition of your code
+	by using git checkout command and than find out what exactly wentwrong by comparing
+	two commits with git diff command.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Making commits
