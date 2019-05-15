@@ -2,7 +2,7 @@ What happens when you initialize a repository? Why do you need to do it?
 
 	When you initialize a repository, you change the state of the directory on your computer
 	to a tracked repository able to support interactions and version control.
-	When running git init command you gen .git hidden directory added.
+	When running git init command you geå .git hidden directory added.
 
 
 
