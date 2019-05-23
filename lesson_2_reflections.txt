@@ -12,20 +12,50 @@ What value do you think it offers?
 	The staging area is rather an information sourse whereas repository or directory are
 	phisically present and allow you to work with your files, open and change them.
 	Staging area keeps your commit in some kind of a standby mode and is a prestage
-	of commit itself. some changes
+	of commit itself.
 
 
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	You can use git diff to compare your repository state and staging srea
+	to see all the changes made in different files. Thus you can choose which file to commit
+	and for instancce having two files changed commit them one by one.
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	It is a good way to try out something new on your project. This way you'll be sure your main
+	programm stays in its initial state. meanwhile you create a new branch to add new features,
+	new options or versions of your file.
+	You might want to create a new branch evevry time you make something new.
+	Branches help switching from task to task.
+
+
 How do the diagrams help you visualize the branch structure?
+
+	It helps you keep a track of all the changes from all the users working on the same project.
+	It also makes it easier to track the time of changes and their order.
+	
+	git log --graph --online	# grph gives rgaphical reflection of brancheas and commits
+					# oneline gives short descriptions
+	when you checkout commit (! not branch), you go to a detached head state.
+	head means the latest commit you're on. if you make commits here, they wont't
+	be reacheble from any branch. if you checkout to the most recenr commit on master
+	you lose them. you can save the by gethering in a new branch with command:
+	git checkout -b new_branch_name, all following commits wil be o this branch.
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	
+	Merging two branches updates file to its latest version where all the changes are reslected.
+	git merge branch_name_1 (master) branch_name_2(coins)	#to do the merge
+	git merge --abort 					#cancels the merge
+
+
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
