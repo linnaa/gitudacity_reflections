@@ -54,8 +54,15 @@ the diagram the way we do?
 	Merging two branches updates file to its latest version where all the changes are reslected.
 	git merge branch_name_1 (master) branch_name_2(coins)	#to do the merge
 	git merge --abort 					#cancels the merge
+	git show *comit id*					#see differrence with parent commit
 
 
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	I see no cons of GIT's automatic mergins as long as it informs you about the conflicts that occured.
+	Merging manually would simply take too much time to compare files - it requires many primitive
+	operations that should bettter be done automaticaly.
+	* resolving a conflict: git marks conflict inside the file: HEAD is the original part
+	common ancector is the part modified in both versions and "branch name" marks the changed part.
+	You change the file, save it and commit - with this commit the merge is done.
