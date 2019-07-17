@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all your work local?
+  When you need to share your projects with the entire universe or collaborate.
+  git remote - check for remote repositories
+  git remote add *remote repository name (often used origin)* *repository url on github* - create a new remote repository
+  git push *local branch name* *remote repository branch name*
