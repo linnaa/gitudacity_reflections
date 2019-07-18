@@ -1,5 +1,16 @@
 When would you want to use a remote repository rather than keeping all your work local?
-  When you need to share your projects with the entire universe or collaborate.
-  git remote - check for remote repositories
-  git remote add *remote repository name (often used origin)* *repository url on github* - create a new remote repository
-  git push *local branch name* *remote repository branch name*
+	When you need to share your projects with the entire universe or collaborate.
+	git remote - check for remote repositories
+	git remote add *remote repository name (often used origin)* *repository url on github* - create a new remote repository
+	git push *local branch name* *remote repository branch name*
+
+
+
+Why might you want to always pull changes manually rather than having Git automatically
+stay up-to-date with your remote repository?
+	Say a few people work on the same projct on the remote.
+	When pulling manually you can always check for updates before you pull commits.
+	If git made updates automatically you might get confused as you never know what
+	has happend to your project.
+	git pull *remote name (origin)* *branch name on the remote*
+	branches on local and remote repository not necessarily have the same name.
