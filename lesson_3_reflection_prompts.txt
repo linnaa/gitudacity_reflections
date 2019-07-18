@@ -1,5 +1,6 @@
 When would you want to use a remote repository rather than keeping all your work local?
 	When you need to share your projects with the entire universe or collaborate.
+	---
 	git remote - check for remote repositories
 	git remote add *remote repository name (often used origin)* *repository url on github* - create a new remote repository
 	git push *remote name (origin)* *remote repository branch name (master)*
@@ -12,5 +13,20 @@ stay up-to-date with your remote repository?
 	When pulling manually you can always check for updates before you pull commits.
 	If git made updates automatically you might get confused as you never know what
 	has happend to your project.
+	---
 	git pull *remote name (origin)* *branch name on the remote*
 	branches on local and remote repository not necessarily have the same name.
+
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+	Forking creates a copy of someones repository and stores it on github servers.
+	You might want to use it when you want to make changes that wouldn't involve the original repository.
+	Clonning will create a copy and allow you to work on your local computer and then push changes to the
+	remote repository or collaborate in a teem.
+	Branch is a good way to try or offer changes without affecting the entire project rith away.
+	---
+	clonning can be used to make a copy on both your local computer, between local and remote.
+	it works on any two repositories.
+	forking is used within a github only to make a copy of some repository.
+	when you clone a repository git automatically sets up a remote repository
+	when you fork a repository, then commit changes to it 
