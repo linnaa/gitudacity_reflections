@@ -22,11 +22,36 @@ Describe the differences between forks, clones, and branches. When would you use
 	Forking creates a copy of someones repository and stores it on github servers.
 	You might want to use it when you want to make changes that wouldn't involve the original repository.
 	Clonning will create a copy and allow you to work on your local computer and then push changes to the
-	remote repository or collaborate in a teem.
-	Branch is a good way to try or offer changes without affecting the entire project rith away.
+	remote repository or collaborate within a teem.
+	Branch is a good way to try or offer changes without affecting the entire project rigth away.
 	---
-	clonning can be used to make a copy on both your local computer, between local and remote.
+	clonning makes a copy on both local computer, between local and remote.
 	it works on any two repositories.
-	forking is used within a github only to make a copy of some repository.
+	forking is used within a github to make a copy of some repository that will be stored on github servers.
 	when you clone a repository git automatically sets up a remote repository
-	when you fork a repository, then commit changes to it 
+	when you fork a repository, then commit changes it addresses them to your copy but does not affect
+	the original repository that you've forked.
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+	It allows you to separate your local changes from remote, you can deal with all the changes
+	without losing the original state of your local branch and then push them to remote.
+	---	
+	if you make different commits on local and remote branch independently so that your local and remote
+	master branch (for example) differ, pulling or pushing a branch in this case will rewrite a branch
+	but not combine two versions of them. say you push a branch from local to remote - it will delete
+	commits made on remote only. what you need is merging them.
+	git stores local copies of all remote branches, that will contain the state of remotes as of the last
+	time you pulled or pushed
+	the local copy with the last known position of the remote
+	it will have a name of the remote and branch of the remote separated by slash (e.g. origin/remote)
+	when you commit a chenge to your local repository, the state of origin/master or master on github
+	does not change. you need to push changes to have them updated.
+	git fetch - updates local copy of the remote leaving your actual local branch unchanged, you can use
+	git log and git diff to see what changes were introduced.
+	then you can merge origin/master and your local master
+	git pull is the same as git fetch followed by git merge
+	git fetch origin - updates the local copy of remote
+	git log origin/master - inspect the local copy of remote
+	git diff origin/master master
+	fast-forward merge - is a merge of two commits where one is the ancestor of the other
