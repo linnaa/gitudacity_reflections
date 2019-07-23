@@ -55,3 +55,17 @@ What is the benefit of having a copy of the last known state of the remote store
 	git log origin/master - inspect the local copy of remote
 	git diff origin/master master
 	fast-forward merge - is a merge of two commits where one is the ancestor of the other
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	You could use emails or messengers to communicate and discuss it all in real life what is awfull.
+	You would have to talk to people. Easier? You might get a candy. Harder? Collaboration can easily get messed up.
+	---
+	pull requests are the way to get feedback on offered changes. it allows contributors to review and comment.
+	first create a new branch on local repo, then push to github (push origin *new-branch-name)
+	on github you need to choose new-brangh (same as git checkout command) and clock pull request
+	if you're working on fork repo github will asume you want to change the original repo by default
+	so you need to change it to your fork if needed
+	* pull request is alled so because oneperson requests that the other would pull changes into master*
+	it is possible to comment the entire change or add an inline comment to some specific line
+	* when you commit again it will show up in the thread of pull request
