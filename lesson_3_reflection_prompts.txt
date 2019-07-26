@@ -2,7 +2,7 @@ When would you want to use a remote repository rather than keeping all your work
 	When you need to share your projects with the entire universe or collaborate.
 	---
 	git remote - check for remote repositories
-	git remote add *remote repository name (often used origin)* *repository url on github* - create a new remote repository
+	git remote add *remote repository name (origin)* *repo url on github* - create a new remote repository
 	git push *remote name (origin)* *remote repository branch name (master)*
 
 
@@ -59,7 +59,8 @@ What is the benefit of having a copy of the last known state of the remote store
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 	You could use emails or messengers to communicate and discuss it all in real life what is awfull.
-	You would have to talk to people. Easier? You might get a candy. Harder? Collaboration can easily get messed up.
+	You would have to talk to people. Easier? You might get a candy. Harder? Collaboration can easily
+	get messed up.
 	---
 	pull requests are the way to get feedback on offered changes. it allows contributors to review and comment.
 	first create a new branch on local repo, then push to github (push origin *new-branch-name)
@@ -69,3 +70,23 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 	* pull request is alled so because oneperson requests that the other would pull changes into master*
 	it is possible to comment the entire change or add an inline comment to some specific line
 	* when you commit again it will show up in the thread of pull request
+
+
+When would you want to make changes in a separate branch rather than directly in master?
+What benefits does each approach have?
+	Working in the master branch is time-saving and esier. Whereas creating a separate branch seems usefull
+	when there's a risk of breacking something, creating a conflict inside a proram. And it is a good idea
+	when people co;aborating are of different professional levels.
+	---
+	when a few people create pull request changin the same line(s), merge conflict occurs
+	github requiers you to solve this conflict on local repo and then update the pull request
+	with the merged version
+	merge button on github will always create a new commit (no fast-forward commit when master
+	upadets and shows last commit as top of the branch)
+	if there are a few pull requests to same branch that don't cause a conflict, we could just merge those
+	but if conflict occurs the author needs to pull branch on their local repo first
+	but if he merged his branch into master the other contributor wouldn't have chance to check updates
+	in collaborative progects the only way to merge is through pull requests. otherwise things might change
+	from under you without notification
+	so first author needs to merge master into his branch and push it up to github, updating the pull request
+	so that collaborators can check it before merging into master
