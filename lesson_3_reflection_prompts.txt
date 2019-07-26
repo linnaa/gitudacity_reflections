@@ -90,3 +90,9 @@ What benefits does each approach have?
 	from under you without notification
 	so first author needs to merge master into his branch and push it up to github, updating the pull request
 	so that collaborators can check it before merging into master
+
+	* when you fork and make changes to both original repo and your fork you to make a remote to work with
+	both of them. it is common to name your fork origin and name the original repo upstream
+
+	* to allow peple to create pull requests you need to add them as collaborators on github.
+
